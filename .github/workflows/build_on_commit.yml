@@ -33,7 +33,7 @@ jobs:
     - name: 'Upload Build Artifact'
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ${{github.workspace}}/**
+        path: ./**
         name: ${{github.event.repository.name}}_build_${{github.run_number}}
         retention-days: 5
 
